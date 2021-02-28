@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    <style>
+        /* div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+           line-height: 200px;
+        } */
+        .box {
+             width: 400px;
+             border: 1px solid gray;
+             margin: 50px auto;
+
+        }
+        .box input{
+            width: 370px;
+            height: 30px;
+            border: 0px;
+            outline: none;
+        }
+       .box p {
+            position: absolute;
+            top: 114px;
+            /* font-size: 10px; */
+        } 
+    </style>
+</head>
+<body>
+    <button id="btn1">查询</button>
+    <div>sd</div>
+    
+    <input type="text" value="请输入">
+    <div class="box">
+        <span>mm</span>
+        <input type="password" id="1">
+        <p>密码</p>
+
+    </div>
+    
+    <script>
+        var btn = document.querySelector('#btn1');
+        var bdiv = document.querySelector('div');
+        bdiv.onclick = function()
+        {
+            alert('点我干嘛');
+        }
+        // bdiv.onmouseover = function(){
+        //     alert('鼠标拿开');
+        // }
+        btn.onclick = function(){
+        var a = prompt('请输入');
+        alert('结果'+a);
+        console.log(a);
+        var str=/^\s+$/g
+        console.log('12'-0)
+        console.log(str.test(a) || a=='');
+        }
+    </script>
+   
+
+</body>
+</html>
